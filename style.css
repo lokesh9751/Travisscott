@@ -1,12 +1,12 @@
 @font-face {
     font-family: General Sans;
-    src: url(/GENERAL-SANS/GeneralSans-Regular.otf) format("opentype");
+    src: url("./GENERAL-SANS/GeneralSans-Regular.otf") format("opentype");
     font-display: swap;
 }
 
 @font-face {
     font-family: General Sans1;
-    src: url(/GENERAL-SANS/GeneralSans-Medium.otf) format("opentype");
+    src: url("./GENERAL-SANS/GeneralSans-Medium.otf") format("opentype");
     font-display: swap;
 }
 
