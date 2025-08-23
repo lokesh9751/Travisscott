@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Travis Scott</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet"
     />
+    <link rel="shortcut icon" href="/PNGS/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loco.css">
 </head>
 <body>
+    <div id="followcursor"><img src="./PNGS/cursorwhite.png" alt=""></div>
     <div id="main">
         <div id="hero">
             <div id="nav">
@@ -19,25 +22,42 @@
                 <h2>SHOP</h2>
             </div>
             <div class="headings">
-                <h1>JACKBOYS 2</h1>
+                <div class="boundary">
+                    <h1 class="boundaryelem">JACKBOYS 2</h1>
+                </div>
                 <div id="fixedcontent">
-                    <h1 id="sectionh2">TOUR</h1>
-                    <h5 id="sectionh5">STAY TUNED</h5>
+                    <div class="boundary">
+                        <h1 class="boundaryelem" id="sectionh2">TOUR</h1>
+                    </div>
+                    <div class="boundary">
+                        <h5 class="boundaryelem" id="sectionh5">STAY TUNED</h5>
+                    </div>
                 </div>
             </div>
             <div id="rightsidedivs">
-                <h5>Contact</h5>
-                <h5>Tickets</h5>
-                <h5>Venue</h5>
+                <div class="boundary">
+                    <h5 class="boundaryelem">Contact</h5>
+                </div>
+                <div class="boundary">
+                    <h5 class="boundaryelem">Tickets</h5>
+                </div>
+                <div class="boundary">
+                    <h5 class="boundaryelem">Venue</h5>
+                </div>
             </div>
             <div id="herofooter">
-                <a target="_blank" href="https://music.apple.com/us/album/jackboys-2/1826343589">
+                <div class="boundary2">
+                    <a target="_blank" href="https://music.apple.com/us/album/jackboys-2/1826343589">
                     <h5>LISTEN ON APPLE MUSIC <i class="ri-arrow-right-up-line"></i></h5>
-                </a>
-                <a target="_blank" href="https://open.spotify.com/album/32lGAqeVkdJxEj2iv2Q01B">
+                    </a>
+                </div>
+                
+                <div class="boundary2">
+                    <a target="_blank" href="https://open.spotify.com/album/32lGAqeVkdJxEj2iv2Q01B">
                     <h5>LISTEN ON SPOTIFY <i class="ri-arrow-right-up-line"></i></h5>
                 </a>
-                <div id="circles">
+                </div>
+                <div class="boundary2" id="circles">
                     <a href=""><i class="ri-arrow-down-line"></i></a>
                     <a href=""><i class="ri-arrow-down-line"></i></a>
                 </div>
@@ -95,7 +115,10 @@
     </div>
 
 
-
-    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="loco.js"></script>
+    <script src="cursor.js"></script>
+    <script src="animation.js"></script>
 </body>
 </html>
