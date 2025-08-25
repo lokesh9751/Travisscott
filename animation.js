@@ -22,7 +22,8 @@ function heroanimation(){
         opacity: 0,
         duration: 1,
         ease: Expo.easeInOut,
-        stagger: .2
+        stagger: .2,
+        delay: -2
     })
 }
 

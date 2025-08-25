@@ -18,16 +18,21 @@ box-sizing: border-box;
 }
 
 html,body{
-width: 100%;
-height: 100vh;
-background-color: black;
-color: rgb(194, 104, 77);
+    width: 100%;
+    background-color: black;
+    color: rgb(194, 104, 77);
+    overflow-x: hidden;
+}
+
+::selection{
+   color: rgb(194, 104, 77);
 }
 
 #followcursor{
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
-    position: absolute;
+    position: fixed;
     z-index: 9999;
+    pointer-events: none;
 }
 
 #main{
@@ -108,6 +113,11 @@ color: rgb(194, 104, 77);
     line-height: 1.5;
     text-align: right;
     padding-right: 40px;
+    transition: color .3s ease;
+}
+
+#rightsidedivs h5:hover{
+    color: white;
 }
 
 #herofooter{
@@ -123,6 +133,11 @@ color: rgb(194, 104, 77);
 #herofooter a{
     color: rgb(194, 104, 77);
     text-decoration: none;
+    transition: color .3s ease;
+}
+
+#herofooter a:hover{
+    color: white;
 }
 
 #circles{
@@ -182,22 +197,19 @@ color: rgb(194, 104, 77);
     letter-spacing: 0.3vw;
 }
 
-#elements img{
+.elements img{
+    position: absolute;
     height: 40vh;
     z-index: 999;
-    display: none;
+    opacity: 0;
 }
 
-#elementslast img{
-    height: 40vh;
-    z-index: 999;
-    display: none;
-}
 
 #third{
     height: 100vh;
     width: 100%;
     position: relative;
+    z-index: 1;
 }
 
 #third video{
@@ -216,10 +228,11 @@ color: rgb(194, 104, 77);
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 20px;
+    padding: 50px;
 }
 
 #disc h1{
+    color: white;
     opacity: .6;
     font-size: 5vw;
     font-family: General Sans1;
@@ -227,17 +240,32 @@ color: rgb(194, 104, 77);
     letter-spacing: 2px;
     text-wrap: wrap;
 }
+#mt{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
 
 #linktree{
     opacity: .6;
     text-transform: capitalize;
-    width: 100%;
     transition: opacity .3s ease;
+    width: 100%;
 }
 
 #linktree a i{
-    font-size: 2.5vw;  
+    font-size: 2.5vw;
+    transition: color .3s ease;
 }
+
+/* #linktree a i:hover{
+    color: rgb(194, 104, 77);
+} */
 
 #linktree:hover{
     opacity: 1;
@@ -246,6 +274,7 @@ color: rgb(194, 104, 77);
 #linktree a{
     color: white;
     text-decoration: none;
+
 }
 
 #linktree a h5{
@@ -253,17 +282,12 @@ color: rgb(194, 104, 77);
     font-size: 15px;
     font-weight: 600;
     display: inline;
+    transition: color .3s ease;
 }
 
-#mt{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: end;
-    text-align: center;
-    gap: 15px;
-    width: 100%;
-    margin-top: 27vw;
-}
+/* #linktree a h5:hover{
+    color: rgb(194, 104, 77);
+} */
 
 .distro{
     padding-left: 10px;
@@ -271,4 +295,35 @@ color: rgb(194, 104, 77);
 
 .boundary{
     width: fit-content;
+}
+
+@media (max-width: 1024px){
+    #sectionh2{
+    margin-left: 35vw;
+    }
+
+    #rightsidedivs h5{
+        font-size: 1.3vw;
+    }
+
+    #mt{
+    margin-top: 30vw;
+    }
+
+    .headings{
+    width: 100%;
+    margin-top: 100px;
+    }
+    
+}
+
+@media (max-width: 768px){
+    #followcursor{
+        display: none;
+    }
+
+    .headings{
+    width: 100%;
+    margin-top: 45px;
+    }
 }
